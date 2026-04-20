@@ -1,13 +1,12 @@
-# HID Usage Code Table
+# HID Usage 코드 테이블
 
-This keyboard's key mapping values are identical to **standard USB HID Usage
-Page 0x07 (Keyboard/Keypad)**, as defined in the USB-IF HID Usage Tables
-(`HUT 1.12`).
+이 키보드의 모든 키 매핑 값은 **표준 USB HID Usage Page 0x07 (Keyboard/Keypad)**와
+완전히 동일합니다. USB-IF HID Usage Tables 공식 문서(`HUT 1.12`)의 해당 페이지와 호환됩니다.
 
-## Letters
+## 알파벳
 
-| Key | Usage | Key | Usage |
-|-----|-------|-----|-------|
+| 키 | Usage | 키 | Usage |
+|----|-------|----|-------|
 | A | 4 | N | 17 |
 | B | 5 | O | 18 |
 | C | 6 | P | 19 |
@@ -22,10 +21,10 @@ Page 0x07 (Keyboard/Keypad)**, as defined in the USB-IF HID Usage Tables
 | L | 15 | Y | 28 |
 | M | 16 | Z | 29 |
 
-## Numbers (Top Row)
+## 숫자 (메인 행)
 
-| Key | Usage | Shift-combo result |
-|-----|-------|--------------------|
+| 키 | Usage | Shift 조합 결과 |
+|----|-------|-----------------|
 | 1 | 30 | ! |
 | 2 | 31 | @ |
 | 3 | 32 | # |
@@ -37,10 +36,10 @@ Page 0x07 (Keyboard/Keypad)**, as defined in the USB-IF HID Usage Tables
 | 9 | 38 | ( |
 | 0 | 39 | ) |
 
-## Control Keys
+## 제어 키
 
-| Key | Usage |
-|-----|-------|
+| 키 | Usage |
+|----|-------|
 | Enter | 40 |
 | Esc | 41 |
 | Backspace | 42 |
@@ -59,10 +58,10 @@ Page 0x07 (Keyboard/Keypad)**, as defined in the USB-IF HID Usage Tables
 | `/ ?` | 56 |
 | CapsLock | 57 |
 
-## Function Keys
+## 펑션 키
 
-| Key | Usage | Key | Usage |
-|-----|-------|-----|-------|
+| 키 | Usage | 키 | Usage |
+|----|-------|----|-------|
 | F1 | 58 | F7 | 64 |
 | F2 | 59 | F8 | 65 |
 | F3 | 60 | F9 | 66 |
@@ -70,10 +69,10 @@ Page 0x07 (Keyboard/Keypad)**, as defined in the USB-IF HID Usage Tables
 | F5 | 62 | F11 | 68 |
 | F6 | 63 | F12 | 69 |
 
-## Editing / Navigation
+## 편집/네비게이션
 
-| Key | Usage |
-|-----|-------|
+| 키 | Usage |
+|----|-------|
 | PrintScreen | 70 |
 | ScrollLock | 71 |
 | Pause/Break | 72 |
@@ -88,10 +87,10 @@ Page 0x07 (Keyboard/Keypad)**, as defined in the USB-IF HID Usage Tables
 | DownArrow | 81 |
 | UpArrow | 82 |
 
-## Keypad
+## 키패드 (Keypad)
 
-| Key | Usage |
-|-----|-------|
+| 키 | Usage |
+|----|-------|
 | NumLock | 83 |
 | Kp / | 84 |
 | Kp * | 85 |
@@ -110,13 +109,12 @@ Page 0x07 (Keyboard/Keypad)**, as defined in the USB-IF HID Usage Tables
 | Kp 0 | 98 |
 | Kp . | 99 |
 
-## Modifier Usages (as individual keys)
+## Modifier Usage (개별 키로 매핑할 때)
 
-Values to use when mapping a modifier **as a plain Usage code** rather than
-via the Modifier byte:
+Modifier byte(비트마스크)가 아닌 **일반 Usage 코드로 매핑**할 때의 값:
 
-| Key | Usage |
-|-----|-------|
+| 키 | Usage |
+|----|-------|
 | LCtrl | 224 |
 | LShift | 225 |
 | LAlt | 226 |
@@ -126,5 +124,5 @@ via the Modifier byte:
 | RAlt | 230 |
 | RWin (GUI) | 231 |
 
-> Normally, the idiomatic encoding is Usage `0` + Modifier byte.
-> (e.g., Ctrl+C = modifier `0x01`, usage `0x06`.)
+> 일반적으로는 Usage `0` + Modifier byte 조합으로 표현하는 쪽이 표준.
+> (ex. Ctrl+C = modifier `0x01`, usage `0x06`.)
