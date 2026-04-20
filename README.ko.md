@@ -1,5 +1,7 @@
 # MINI KeyBoard 키 매핑 프로토콜 (사양 문서)
 
+> English: [README.md](README.md)
+
 중국산 미니 매크로 키보드(소위 "3key / 미니 키패드")의 **공식 Windows 설정 프로그램이
 해당 개체에서 작동하지 않을 때**, 매핑을 직접 제어할 수 있도록 USB HID 프로토콜을 정리한 사양 문서입니다.
 
